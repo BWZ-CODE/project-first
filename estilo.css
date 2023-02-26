@@ -1,0 +1,28 @@
+
+:root{
+    --very-light-ping: #C7C7C7;
+    --text-input-field: #F7F7F7;
+    --hospital-green: #ACD9B2;
+    --black: #000000;
+    --white: #FFFFFF;
+}
+
+body
+{
+    color: #333;
+    text-align: center;
+    font-family: "Arial";
+    font-size: 16px;
+}
+#container
+{
+    width: 70%;
+    border: 1px solid #DDD;
+    margin: 0 auto;
+    margin-top: 15%;
+}
+
+#container h1
+{
+    font-size: 20px;
+}
