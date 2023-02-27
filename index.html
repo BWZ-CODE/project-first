@@ -35,7 +35,13 @@
         background: var(--text-input-field);
         align-items: center;
         color: var(--very-light-ping);
-        border-bottom: 10px black;
+        border-bottom: 1px solid gray;
+
+    }
+
+    .inactive{
+        display: none;
+        transition: all 2s;
     }
 
     img#logo{
@@ -52,12 +58,14 @@
     li{
         margin-right: 40px;
         list-style: none;
+        user-select: none;
     }
 
     li:hover{
         cursor: pointer;
         color: var(--hospital-green);
         border-color: 5px var(--hospital-green);
+        user-select: none;
     }
 
     div.sign-in{
@@ -189,6 +197,39 @@
             color: var(--white);
         }
 
+         .desk_menu{
+        position: absolute;
+        top: 10.2vh;
+        right:115px;
+        width: 120px;
+        height: auto;
+        border: 1px solid var(--very-light-ping);
+        border-radius: 8px;
+    }
+
+    .lista{
+        list-style: none;
+        padding: 15px;
+        margin: 0;
+        
+        
+    }
+    .lista li{
+        text-align: end;
+        font-size: var(--md);
+        font-weight: bolder;
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+
+  
+    .lista li:nth-child(3){
+        padding-top: 15px;
+        border-top: 1px solid var(--black);
+        color: var(--hospital-green);
+        align-items: center;
+    }
+
         
 
 
@@ -226,6 +267,14 @@
                 <p>sign-in</p>
             </div>
             <img src="Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="carrito" class="carrito">
+            <div class="desk_menu  inactive">
+                <ul class="lista">
+                    <li>My orders</li>
+                    <li>My account</li>
+                    <li>Sign-out</li>
+                </ul>
+            </div>
+        
         </nav>
     </header>
 

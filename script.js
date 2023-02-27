@@ -1,4 +1,4 @@
-const menu = document.querySelector('.menu');
+/*const menu = document.querySelector('.menu');
 const inic = document.querySelector('.login');
 const aver = document.querySelectorAll('p');
 const form = document.querySelector('.form');
@@ -6,9 +6,28 @@ const button2 = document.querySelector ('.secundary-button');
 const button1 = document.querySelector ('.primary-button');
 const inp1 = document.querySelector('.input-email');
 const inp2 = document.querySelector ('.input-password');
-const resul = document.querySelector('.result')
+const resul = document.querySelector('.result');*/
+const sign= document.querySelector('.sign-in'); 
+const desk= document.querySelector('.desk_menu');
 
-form.addEventListener('click', btn1)
+
+
+
+sign.addEventListener('click', toggledesk_menu)
+
+
+function toggledesk_menu(){
+    desk.classList.toggle('inactive');
+
+}
+
+
+
+
+
+
+/*form.addEventListener('click', btn1)
+
 
 
 console.log({
@@ -35,4 +54,4 @@ function btn1(){
 
 function btn2(){
     console.log("adsd")
-}
+}*/
